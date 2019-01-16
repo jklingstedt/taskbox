@@ -10,8 +10,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "CI=true react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -21,5 +23,21 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@storybook/addon-actions": "^4.1.6",
+    "@storybook/addon-links": "^4.1.6",
+    "@storybook/addon-storyshots": "^4.1.6",
+    "@storybook/addons": "^4.1.6",
+    "@storybook/react": "^4.1.6",
+    "babel-loader": "^8.0.4",
+    "eslint": "^5.12.0",
+    "eslint-config-jhh": "^1.0.8",
+    "eslint-config-jhh-react": "^1.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-react": "^7.12.3",
+    "react-test-renderer": "^16.7.0",
+    "require-context.macro": "^1.0.4"
+  }
 }

@@ -1,0 +1,30 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "extends": [
+        "jhh-react"
+    ],
+    "globals": {
+        "process": true,
+        "jest": true,
+        "describe": true,
+        "it": true,
+        "expect": true,
+        "cy": true,
+        "Cypress": true
+    }
+}
