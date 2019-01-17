@@ -26,6 +26,7 @@ const Task = ({ task: { id, title, state }, onArchiveTask, onPinTask }) => (
 
         <div className="actions" onClick={event => event.stopPropagation()}>
             {state !== 'TASK_ARCHIVED' && (
+                // eslint-disable-next-line
                 <a onClick={() => onPinTask(id)}>
                     <span className="icon-star" />
                 </a>
